@@ -40,8 +40,10 @@ AppAsset::register($this);
             ['label' => 'บริหารรถ', 'url' => ['/car']],
             ['label' => 'บริหารยี่ห้อ', 'url' => ['/car-brand']],
             ['label' => 'บริหารคนขับ', 'url' => ['/drivers']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'สิทธิการใช้งาน', 'url' => ['/carpriority']],
+            ['label' => 'ผู้ใช้งานระบบ', 'url' => ['/users']],
+            ['label' => 'ประเภทการเดินทาง', 'url' => ['/gotype']],
+            ['label' => 'ประเภทเชื้อเพลิง', 'url' => ['/fueltype']],
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [
