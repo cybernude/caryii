@@ -1,0 +1,136 @@
+2015-08-23 08:28:41 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\CarBrand::car_name' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('car_name')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('car_name')
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(373): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBrand), 'car_name')
+#3 /Applications/MAMP/htdocs/caryii/views/car/_form.php(22): yii\helpers\BaseArrayHelper::map(Array, 'car_brand_id', 'car_name')
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#7 /Applications/MAMP/htdocs/caryii/views/car/create.php(19): yii\base\View->render('_form', Array)
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\controllers\CarController))
+#11 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(app\controllers\CarController))
+#12 /Applications/MAMP/htdocs/caryii/controllers/CarController.php(70): yii\base\Controller->render('create', Array)
+#13 [internal function]: app\controllers\CarController->actionCreate()
+#14 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#17 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('car/create', Array)
+#18 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2015-08-23 08:28:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'car/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => 'd80b17bdcb7f0f4be8b5eb36b17cb4b8cb8b0b0da8acc13e557168e666e90451a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GW9iwewUMR_8wf50qBQcabsG3R-f2BrI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=d80b17bdcb7f0f4be8b5eb36b17cb4b8cb8b0b0da8acc13e557168e666e90451a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GW9iwewUMR_8wf50qBQcabsG3R-f2BrI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '64921'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=car%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=car%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440311320.83
+    'REQUEST_TIME' => 1440311320
+    'argv' => [
+        0 => 'r=car%2Fcreate'
+    ]
+    'argc' => 1
+]
+2015-08-23 08:46:50 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\CarBrand::driver_id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('driver_id')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('driver_id')
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(372): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBrand), 'driver_id')
+#3 /Applications/MAMP/htdocs/caryii/views/car/_form.php(63): yii\helpers\BaseArrayHelper::map(Array, 'driver_id', 'driver_name')
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, NULL)
+#7 /Applications/MAMP/htdocs/caryii/views/car/create.php(19): yii\base\View->render('_form', Array)
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\controllers\CarController))
+#11 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('create', Array, Object(app\controllers\CarController))
+#12 /Applications/MAMP/htdocs/caryii/controllers/CarController.php(70): yii\base\Controller->render('create', Array)
+#13 [internal function]: app\controllers\CarController->actionCreate()
+#14 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#15 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#17 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('car/create', Array)
+#18 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#20 {main}
+2015-08-23 08:46:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'car/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => 'd80b17bdcb7f0f4be8b5eb36b17cb4b8cb8b0b0da8acc13e557168e666e90451a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"GW9iwewUMR_8wf50qBQcabsG3R-f2BrI\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=d80b17bdcb7f0f4be8b5eb36b17cb4b8cb8b0b0da8acc13e557168e666e90451a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22GW9iwewUMR_8wf50qBQcabsG3R-f2BrI%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '65170'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=car%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=car%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440312409.93
+    'REQUEST_TIME' => 1440312409
+    'argv' => [
+        0 => 'r=car%2Fcreate'
+    ]
+    'argc' => 1
+]
