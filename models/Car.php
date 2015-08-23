@@ -56,21 +56,21 @@ class Car extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_id' => 'Car ID',
-            'car_type_id' => 'Car Type ID',
-            'car_register' => 'Car Register',
-            'description' => 'Description',
-            'startdatetime' => 'Startdatetime',
-            'car_brand_id' => 'Car Brand ID',
-            'car_model' => 'Car Model',
-            'number_engine' => 'Number Engine',
-            'number_tank' => 'Number Tank',
-            'start_mile' => 'Start Mile',
-            'max_fuel' => 'Max Fuel',
-            'usage_mile' => 'Usage Mile',
-            'repair_price' => 'Repair Price',
-            'driver_id' => 'Driver ID',
-            'event_color' => 'Event Color',
+            'car_id' => 'รหัสลงทะเบียน',
+            'car_type_id' => 'ประเภท',
+            'car_register' => 'ทะเบียน',
+            'description' => 'ลักษณะการใช้งาน',
+            'startdatetime' => 'วันที่เริ่มใช้',
+            'car_brand_id' => 'ยี่ห้อ',
+            'car_model' => 'รุ่น',
+            'number_engine' => 'เลขเครื่องยนต์',
+            'number_tank' => 'เลขตัวถัง',
+            'start_mile' => 'เข็มไมค์เริ่มต้น',
+            'max_fuel' => 'ความจุน้ำมันสูงสุด',
+            'usage_mile' => 'เลขไมค์สะสม',
+            'repair_price' => 'มูลค่าการซ่อมบำรุง',
+            'driver_id' => 'ผู้ดูแล',
+            'event_color' => 'สีแสดงผล',
         ];
     }
 
