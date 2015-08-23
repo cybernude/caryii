@@ -36,8 +36,8 @@ class CarBrand extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_brand_id' => 'Car Brand ID',
-            'brand_name' => 'Brand Name',
+            'car_brand_id' => 'รหัส',
+            'brand_name' => 'ยี่ห้อ',
         ];
     }
 }

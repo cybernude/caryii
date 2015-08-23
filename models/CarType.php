@@ -36,8 +36,8 @@ class CarType extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_type_id' => 'Car Type ID',
-            'car_type_name' => 'Car Type Name',
+            'car_type_id' => 'รหัส',
+            'car_type_name' => 'ประเภท',
         ];
     }
 }
