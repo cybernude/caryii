@@ -22,7 +22,7 @@ use kartik\datetime\DateTimePicker;
     <?//= $form->field($model, 'car_id')->textInput() ?>
 
     <?= $form->field($model, 'car_type_id')->dropDownList(
-        \yii\helpers\ArrayHelper::map(\app\models\car::find()->all(),'car_type_id','car_type_name'),
+        \yii\helpers\ArrayHelper::map(\app\models\carType::find()->all(),'car_type_id','car_type_name'),
         ['prompt'=>'เลือกรถ']
     )
     ?>
