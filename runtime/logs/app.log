@@ -879,3 +879,52 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2015-08-23 18:24:27 [::1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '=>' (T_DOUBLE_ARROW)' in /Applications/MAMP/htdocs/caryii/views/carbook/_form.php:36
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-23 18:24:27 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/create'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54121'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440347067.29
+    'REQUEST_TIME' => 1440347067
+    'argv' => [
+        0 => 'r=carbook%2Fcreate'
+    ]
+    'argc' => 1
+]

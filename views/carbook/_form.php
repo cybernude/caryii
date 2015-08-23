@@ -32,25 +32,23 @@ use kartik\datetime\DateTimePicker;
     <?//= $form->field($model, 'startdatetime')->textInput() ?>
 
 
-    <?=
-    $form->field($model, 'startdatetime')->widget(DateTimePicker::className(), [
+    <?= $form->field($model, 'startdatetime')->widget(DateTimePicker::className(), [
         'options' => ['placeholder' => 'เลือกวันเดินทาง ...'],
         'convertFormat' => true,
         'pluginOptions' => [
-            'format' => 'yyyy-mm-dd HH:i:00',
-            'startDate' => 'yyyy-mm-dd HH:i:s',
+            'format' => 'yyyy-MM-dd HH:i:00',
+            'startDate' => 'yyyy-MM-dd HH:i:s',
             'todayHighlight' => true
         ]
     ]);
     ?>
 
-    <?=
-    $form->field($model, 'enddatetime')->widget(DateTimePicker::className(), [
+    <?= $form->field($model, 'enddatetime')->widget(DateTimePicker::className(), [
         'options' => ['placeholder' => 'เลือกวันกลับ ...'],
         'convertFormat' => true,
         'pluginOptions' => [
-            'format' => 'yyyy-mm-dd HH:i:00',
-            'startDate' => 'yyyy-mm-dd HH:i:s',
+            'format' => 'yyyy-MM-dd HH:i:00',
+            'startDate' => 'yyyy-MM-dd HH:i:s',
             'todayHighlight' => true
         ]
     ]);
