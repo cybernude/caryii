@@ -27,8 +27,16 @@ use Yii;
  * @property integer $go_id
  * @property string $booking
  * @property string $cancel
+ * @property integer $shift_id
+ * @property integer $syn_id
  *
+ * @property Users $booking0
  * @property Car $car
+ * @property GoType $go
+ * @property Drivers $driver
+ * @property Users $approve0
+ * @property Shift $shift
+ * @property Syn $syn
  */
 class CarBook extends \yii\db\ActiveRecord
 {
@@ -47,7 +55,7 @@ class CarBook extends \yii\db\ActiveRecord
     {
         return [
             [['request_date', 'startdatetime', 'enddatetime', 'approve_date', 'realstartdatetime', 'realenddatetime'], 'safe'],
-            [['car_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id'], 'integer'],
+            [['car_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id', 'shift_id', 'syn_id'], 'integer'],
             [['description'], 'string'],
             [['subject'], 'string', 'max' => 255],
             [['approve', 'booking', 'cancel'], 'string', 'max' => 1],
@@ -61,27 +69,37 @@ class CarBook extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_book_id' => 'Car Book ID',
-            'request_date' => 'Request Date',
-            'car_id' => 'Car ID',
-            'subject' => 'Subject',
-            'description' => 'Description',
-            'startdatetime' => 'Startdatetime',
-            'enddatetime' => 'Enddatetime',
+            'car_book_id' => 'เลขคำขอ',
+            'request_date' => 'วันที่ขอ',
+            'car_id' => 'รถยนต์',
+            'subject' => 'หัวข้อ',
+            'description' => 'รายละเอียด',
+            'startdatetime' => 'เดินทางวันที่',
+            'enddatetime' => 'ถึงวันที่',
             'staff' => 'Staff',
-            'approve_id' => 'Approve ID',
-            'approve' => 'Approve',
-            'approve_date' => 'Approve Date',
-            'driver_id' => 'Driver ID',
-            'realstartdatetime' => 'Realstartdatetime',
-            'realenddatetime' => 'Realenddatetime',
-            'milestart' => 'Milestart',
-            'mileend' => 'Mileend',
-            'booking_id' => 'Booking ID',
-            'go_id' => 'Go ID',
-            'booking' => 'Booking',
-            'cancel' => 'Cancel',
+            'approve_id' => 'อนุมัติโดย',
+            'approve' => 'ผลอนุมัติ',
+            'approve_date' => 'วันที่อนุมัติ',
+            'driver_id' => 'พนักงานขับรถ',
+            'realstartdatetime' => 'ออกเดินทางจริง',
+            'realenddatetime' => 'กลับถึงสำนักงานจริง',
+            'milestart' => 'เลขไมค์เมื่อรถออก',
+            'mileend' => 'เลขไมค์เมื่อรถหยุด',
+            'booking_id' => 'ผู้บันทึกการเดินทาง',
+            'go_id' => 'ประเภทการเดินทาง',
+            'booking' => 'ผลการบันทึก',
+            'cancel' => 'ยกเลิก',
+            'shift_id' => 'ประเภทเวร',
+            'syn_id' => 'ประเภทกะ',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBooking0()
+    {
+        return $this->hasOne(Users::className(), ['user_id' => 'booking_id']);
     }
 
     /**
@@ -90,5 +108,45 @@ class CarBook extends \yii\db\ActiveRecord
     public function getCar()
     {
         return $this->hasOne(Car::className(), ['car_id' => 'car_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getGo()
+    {
+        return $this->hasOne(GoType::className(), ['go_id' => 'go_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getDriver()
+    {
+        return $this->hasOne(Drivers::className(), ['driver_id' => 'driver_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getApprove0()
+    {
+        return $this->hasOne(Users::className(), ['user_id' => 'approve_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getShift()
+    {
+        return $this->hasOne(Shift::className(), ['shift_id' => 'shift_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getSyn()
+    {
+        return $this->hasOne(Syn::className(), ['syn_id' => 'syn_id']);
     }
 }
