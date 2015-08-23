@@ -42,7 +42,7 @@ class Drivers extends \yii\db\ActiveRecord
     {
         return [
             'driver_id' => 'Driver ID',
-            'driver_name' => 'Driver Name',
+            'driver_name' => 'พนักงานขับ',
             'driver_call_name' => 'Driver Call Name',
             'driver_telephone' => 'Driver Telephone',
             'driver_email' => 'Driver Email',

@@ -25,12 +25,12 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'car_id',
-            'car_type_id',
+            //'car_id',
+            'carType.car_type_name',
+            'carBrand.brand_name',
             'car_register',
             'description',
-            'startdatetime',
-            // 'car_brand_id',
+            //'startdatetime',
             // 'car_model',
             // 'number_engine',
             // 'number_tank',
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'max_fuel',
             // 'usage_mile',
             // 'repair_price',
-            // 'driver_id',
+             'driver.driver_name',
             // 'event_color',
 
             ['class' => 'yii\grid\ActionColumn'],
