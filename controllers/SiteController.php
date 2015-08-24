@@ -2,12 +2,14 @@
 
 namespace app\controllers;
 
+use app\models\CarBook;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use yii2fullcalendar\yii2fullcalendar;
 
 class SiteController extends Controller
 {
@@ -49,7 +51,21 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        $carbooks = CarBook::find()->all() ;
+        $tasks = [];
+        foreach ($carbooks as $carbook)
+        {
+            $event = new \yii2fullcalendar\models\Event();
+            $event->id = $carbook->car_book_id;
+            $event->title = $carbook->subject;
+            $event->start = $carbook->startdatetime;
+            $event->end = $carbook->enddatetime;
+            $tasks[] = $event;
+        }
+
+        return $this->render('index',[
+            'events' => $tasks,
+        ]);
     }
 
     public function actionLogin()
