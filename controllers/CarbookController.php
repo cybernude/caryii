@@ -61,20 +61,23 @@ class CarbookController extends Controller
     public function actionCreate()
     {
         $model = new CarBook();
-        $model2 = new CarBookPassenger();
+
+
 
         if ($model->load(Yii::$app->request->post())) {
+            $model->save();
+            $carbook_id = $model->car_book_id;
+
 
             $passengerl = $_POST['passengerl'];
             //print_r($equips);
             for ($i = 0; $i < count($passengerl); $i++) {
 
+                $model2 = new CarBookPassenger();
                 $model2->passenger_id = $passengerl[$i] ;
-                $model2->car_book_id = $model->car_book_id;
+                $model2->car_book_id = $carbook_id;
+                $model2->save();
             }
-
-            $model2->save();
-            $model->save();
 
             return $this->redirect(['view', 'id' => $model->car_book_id]);
         } else {

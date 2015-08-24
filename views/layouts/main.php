@@ -76,9 +76,9 @@ AppAsset::register($this);
 
 <footer class="footer">
     <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
+        <p class="pull-left">&copy; ฝ่ายสนับสนุนบริการสุขภาพ โรงพยาบาลเขื่องใน จังหวัดอุบลราชธานี <?= date('Y') ?></p>
 
-        <p class="pull-right"><?= Yii::powered() ?></p>
+        <p class="pull-right"><?= "Powered by Mr.Surachai Sriaram" ?></p>
     </div>
 </footer>
 
