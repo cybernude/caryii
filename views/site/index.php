@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'ระบบสำนักงาน โรงพยาบาลเขื่องใน';
 ?>
 
 <?= \yii2fullcalendar\yii2fullcalendar::widget(array(

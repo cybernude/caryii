@@ -27,7 +27,7 @@ AppAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'My Company',
+        'brandLabel' => 'ระบบสำนักงาน โรงพยาบาลเขื่องใน',
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -37,13 +37,23 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'บริหารรถ', 'url' => ['/car']],
-            ['label' => 'บริหารยี่ห้อ', 'url' => ['/car-brand']],
-            ['label' => 'บริหารคนขับ', 'url' => ['/drivers']],
-            ['label' => 'สิทธิการใช้งาน', 'url' => ['/carpriority']],
-            ['label' => 'ผู้ใช้งานระบบ', 'url' => ['/users']],
-            ['label' => 'ประเภทการเดินทาง', 'url' => ['/gotype']],
-            ['label' => 'ประเภทเชื้อเพลิง', 'url' => ['/fueltype']],
+            ['label' => 'ระบบบริการ', 'url' => ['#'], 'items' =>[
+                ['label' => 'ระบบขอใช้รถยนต์ส่วนกลาง', 'url' => ['#']],
+                ['label' => 'ระบบจองห้องประชุม', 'url' => ['#']],
+                ['label' => 'ระบบหนังสือเวียน', 'url' => ['#']]
+            ]],
+            ['label' => 'ตั้งค่าระบบขอใช้รถยนต์ส่วนกลาง', 'url' => ['#'], 'items' => [
+                    ['label' => 'บริหารรถ', 'url' => ['/car']],
+                    ['label' => 'บริหารยี่ห้อ', 'url' => ['/car-brand']],
+                    ['label' => 'บริหารคนขับ', 'url' => ['/drivers']],
+                    ['label' => 'สิทธิการใช้งาน', 'url' => ['/carpriority']],
+                    ['label' => 'ผู้ใช้งานระบบ', 'url' => ['/users']],
+                    ['label' => 'ประเภทการเดินทาง', 'url' => ['/gotype']],
+                    ['label' => 'ประเภทเชื้อเพลิง', 'url' => ['/fueltype']],
+                    ['label' => 'ประเภทกะ', 'url' => ['/syn']],
+                    ['label' => 'ประเภทเวร', 'url' => ['/shift']],
+                ]],
+
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [
