@@ -2,13 +2,13 @@
 
 namespace app\controllers;
 
+use app\models\CarBookPassenger;
 use Yii;
 use app\models\CarBook;
 use app\models\CarbookSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
 /**
  * CarbookController implements the CRUD actions for CarBook model.
  */
@@ -61,8 +61,21 @@ class CarbookController extends Controller
     public function actionCreate()
     {
         $model = new CarBook();
+        $model2 = new CarBookPassenger();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+
+            $passengerl = $_POST['passengerl'];
+            //print_r($equips);
+            for ($i = 0; $i < count($passengerl); $i++) {
+
+                $model2->passenger_id = $passengerl[$i] ;
+                $model2->car_book_id = $model->car_book_id;
+            }
+
+            $model2->save();
+            $model->save();
+
             return $this->redirect(['view', 'id' => $model->car_book_id]);
         } else {
             return $this->render('create', [

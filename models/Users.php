@@ -14,6 +14,11 @@ use Yii;
  * @property string $telephone
  * @property integer $car_priority_id
  * @property string $email
+ *
+ * @property CarBook[] $carBooks
+ * @property CarBook[] $carBooks0
+ * @property CarBook[] $carBooks1
+ * @property CarBookPassenger[] $carBookPassengers
  */
 class Users extends \yii\db\ActiveRecord
 {
@@ -51,5 +56,37 @@ class Users extends \yii\db\ActiveRecord
             'car_priority_id' => 'Car Priority ID',
             'email' => 'Email',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarBooks()
+    {
+        return $this->hasMany(CarBook::className(), ['user_id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarBooks0()
+    {
+        return $this->hasMany(CarBook::className(), ['approve_id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarBooks1()
+    {
+        return $this->hasMany(CarBook::className(), ['booking_id' => 'user_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarBookPassengers()
+    {
+        return $this->hasMany(CarBookPassenger::className(), ['passenger_id' => 'user_id']);
     }
 }

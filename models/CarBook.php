@@ -30,8 +30,9 @@ use Yii;
  * @property string $cancel
  * @property integer $shift_id
  * @property integer $syn_id
+ * @property integer $user_id
  *
- * @property CarType $carType
+ * @property Users $user
  * @property Car $car
  * @property GoType $go
  * @property Drivers $driver
@@ -39,6 +40,8 @@ use Yii;
  * @property Shift $shift
  * @property Syn $syn
  * @property Users $booking0
+ * @property CarType $carType
+ * @property CarBookPassenger[] $carBookPassengers
  */
 class CarBook extends \yii\db\ActiveRecord
 {
@@ -57,7 +60,7 @@ class CarBook extends \yii\db\ActiveRecord
     {
         return [
             [['request_date', 'startdatetime', 'enddatetime', 'approve_date', 'realstartdatetime', 'realenddatetime'], 'safe'],
-            [['car_id', 'car_type_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id', 'shift_id', 'syn_id'], 'integer'],
+            [['car_id', 'car_type_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id', 'shift_id', 'syn_id', 'user_id'], 'integer'],
             [['description'], 'string'],
             [['subject'], 'string', 'max' => 255],
             [['approve', 'booking', 'cancel'], 'string', 'max' => 1],
@@ -73,11 +76,11 @@ class CarBook extends \yii\db\ActiveRecord
         return [
             'car_book_id' => 'Car Book ID',
             'request_date' => 'Request Date',
-            'car_id' => 'Car ID',
+            'car_id' => 'Car IDช',
             'car_type_id' => 'ประเภทรถ',
             'subject' => 'หัวข้อ',
             'description' => 'รายละเอียด',
-            'startdatetime' => 'วันเดินทาง',
+            'startdatetime' => 'วันเดินทางไป',
             'enddatetime' => 'วันเดินทางกลับ',
             'staff' => 'Staff',
             'approve_id' => 'Approve ID',
@@ -94,15 +97,16 @@ class CarBook extends \yii\db\ActiveRecord
             'cancel' => 'Cancel',
             'shift_id' => 'Shift ID',
             'syn_id' => 'Syn ID',
+            'user_id' => 'ผู้โดยสาร',
         ];
     }
 
     /**
      * @return \yii\db\ActiveQuery
      */
-    public function getCarType()
+    public function getUser()
     {
-        return $this->hasOne(CarType::className(), ['car_type_id' => 'car_type_id']);
+        return $this->hasOne(Users::className(), ['user_id' => 'user_id']);
     }
 
     /**
@@ -159,5 +163,21 @@ class CarBook extends \yii\db\ActiveRecord
     public function getBooking0()
     {
         return $this->hasOne(Users::className(), ['user_id' => 'booking_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarType()
+    {
+        return $this->hasOne(CarType::className(), ['car_type_id' => 'car_type_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getCarBookPassengers()
+    {
+        return $this->hasMany(CarBookPassenger::className(), ['car_book_id' => 'car_book_id']);
     }
 }

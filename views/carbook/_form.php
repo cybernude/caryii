@@ -3,6 +3,8 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use kartik\datetime\DateTimePicker;
+use kartik\select2\Select2;
+
 
 /* @var $this yii\web\View */
 /* @var $model app\models\CarBook */
@@ -28,6 +30,13 @@ use kartik\datetime\DateTimePicker;
     ?>
 
 
+    <?= Select2::widget([
+        'name' => 'passengerl',
+        'value' => '',
+        'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+        'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
+    ]);
+    ?>
 
     <?//= $form->field($model, 'startdatetime')->textInput() ?>
 
