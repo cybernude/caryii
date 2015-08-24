@@ -3180,3 +3180,581 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2015-08-24 15:55:42 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+The SQL being executed was: DELETE FROM `car_book` WHERE `car_book_id`=24' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `ca...')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+)
+
+2015-08-24 15:55:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/delete'
+    'id' => '24'
+]
+
+$_POST = [
+    '_csrf' => 'ZHZuUl9VclcoJFZqFT0LLQ89DyowOREhVQMFNBo8GiBUPgdnDxIwZQ=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62125'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fdelete&id=24'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fdelete&id=24'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424542.49
+    'REQUEST_TIME' => 1440424542
+    'argv' => [
+        0 => 'r=carbook%2Fdelete&id=24'
+    ]
+    'argc' => 1
+]
+2015-08-24 15:55:58 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+The SQL being executed was: DELETE FROM `car_book` WHERE `car_book_id`=24' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `ca...')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+)
+
+2015-08-24 15:55:57 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/delete'
+    'id' => '24'
+]
+
+$_POST = [
+    '_csrf' => 'VC50WVozZHIYfExhEFsdCD9lFSE1XwcEZVsfPx9aDAVkZh1sCnQmQA=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62131'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fdelete&id=24'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fdelete&id=24'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424557.95
+    'REQUEST_TIME' => 1440424557
+    'argv' => [
+        0 => 'r=carbook%2Fdelete&id=24'
+    ]
+    'argc' => 1
+]
+2015-08-24 15:56:04 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+The SQL being executed was: DELETE FROM `car_book` WHERE `car_book_id`=41' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `ca...')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+)
+
+2015-08-24 15:56:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/delete'
+    'id' => '41'
+]
+
+$_POST = [
+    '_csrf' => 'UXdMYlpOVWMdJXRaECYsGTo8LRo1IjYVYAInBB8nPRRhPyVXCgkXUQ=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62132'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fdelete&id=41'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fdelete&id=41'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424564.31
+    'REQUEST_TIME' => 1440424564
+    'argv' => [
+        0 => 'r=carbook%2Fdelete&id=41'
+    ]
+    'argc' => 1
+]
+2015-08-24 15:56:18 [::1][-][-][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php:781
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(781): PDOStatement->execute()
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+The SQL being executed was: DELETE FROM `car_book` WHERE `car_book_id`=24' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Schema.php:628
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/Command.php(791): yii\db\Schema->convertException(Object(PDOException), 'DELETE FROM `ca...')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(262): yii\db\Command->execute()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(607): yii\db\ActiveRecord::deleteAll('[<span class="s...')
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRecord.php(570): yii\db\ActiveRecord->deleteInternal()
+#4 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(117): yii\db\ActiveRecord->delete()
+#5 [internal function]: app\controllers\CarbookController->actionDelete('<span class="st...')
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1451
+    [2] => Cannot delete or update a parent row: a foreign key constraint fails (`car_book`.`car_book_passenger`, CONSTRAINT `car_book_passenger_ibfk_1` FOREIGN KEY (`car_book_id`) REFERENCES `car_book` (`car_book_id`))
+)
+
+2015-08-24 15:56:18 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/delete'
+    'id' => '24'
+]
+
+$_POST = [
+    '_csrf' => 'NUZhQjItcFN5FFl6eEUJKV4NADpdQRMlBDMKJHdEGCQFDgh3YmoyYQ=='
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fview&id=24'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62134'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fdelete&id=24'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fdelete&id=24'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424578.85
+    'REQUEST_TIME' => 1440424578
+    'argv' => [
+        0 => 'r=carbook%2Fdelete&id=24'
+    ]
+    'argc' => 1
+]
+2015-08-24 15:58:32 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: passengerl' in /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(72): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/M...', 72, Array)
+#1 [internal function]: app\controllers\CarbookController->actionCreate()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/create', Array)
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2015-08-24 15:58:32 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/create'
+]
+
+$_POST = [
+    '_csrf' => 'VlNDLUFUSUwaAXsVCzwwNj0YIlUuOCo6ZyYoSwQ9ITtmGyoYERMLfg=='
+    'CarBook' => [
+        'subject' => 'dddd'
+        'description' => 'ddddd'
+        'car_type_id' => '4'
+        'user_id' => ''
+        'startdatetime' => '2015-08-25 20:00:00'
+        'enddatetime' => '2015-08-28 19:00:00'
+    ]
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '272'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62166'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424712.44
+    'REQUEST_TIME' => 1440424712
+    'argv' => [
+        0 => 'r=carbook%2Fcreate'
+    ]
+    'argc' => 1
+]
+2015-08-24 16:02:59 [::1][-][eb0719379aa73240aa6d4065059d4eb6][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-24 16:02:59 [::1][-][eb0719379aa73240aa6d4065059d4eb6][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SESSION = [
+    'sess_userid' => 'eb0719379aa73240aa6d4065059d4eb6'
+    'sess_user_id' => '1'
+    'sess_loginname' => 'admin'
+    'sess_username' => 'ผู้ดูแลระบบ web'
+    'sess_priority' => 'Y'
+    'sess_approve' => 'Y'
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62215'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440424979.16
+    'REQUEST_TIME' => 1440424979
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-24 16:03:52 [::1][-][eb0719379aa73240aa6d4065059d4eb6][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-24 16:03:52 [::1][-][eb0719379aa73240aa6d4065059d4eb6][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => 'eb0719379aa73240aa6d4065059d4eb6'
+    '_identity' => 'd6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"7XBPBACS4DHx3NBtVRgMBrsupguoQBTR\",2592000]\";}'
+    '_csrf' => '834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2\";}'
+]
+
+$_SESSION = [
+    'sess_userid' => 'eb0719379aa73240aa6d4065059d4eb6'
+    'sess_user_id' => '1'
+    'sess_loginname' => 'admin'
+    'sess_username' => 'ผู้ดูแลระบบ web'
+    'sess_priority' => 'Y'
+    'sess_approve' => 'Y'
+    '__flash' => []
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=eb0719379aa73240aa6d4065059d4eb6; _identity=d6a89bb75df344968d8019ad20a957c7f968de3b1dd120748b444a246e93fe25a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%227XBPBACS4DHx3NBtVRgMBrsupguoQBTR%22%2C2592000%5D%22%3B%7D; _csrf=834f487ffe909de5cadad520da2040cc029ed16e5ae5ab575e51d7077fc92cd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LR88JhyzkKaxolcv1ukfEihw0Hi5PGB2%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '62221'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440425032.83
+    'REQUEST_TIME' => 1440425032
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]

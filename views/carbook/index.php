@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\CarbookSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Car Books';
+$this->title = 'แบบฟอร์มขอใช้รถยนต์';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="car-book-index">
@@ -26,13 +26,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'car_book_id',
-            'request_date',
-            'car_id',
+            //'request_date',
+            //'car_id',
             'subject',
             'description:ntext',
-
-            // 'startdatetime',
-            // 'enddatetime',
+            'startdatetime',
+            'enddatetime',
+            'car_type_id',
             // 'staff',
             // 'approve_id',
             // 'approve',

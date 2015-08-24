@@ -30,21 +30,28 @@ use kartik\select2\Select2;
     ?>
 
 
-    <?//= Select2::widget([
-     //   'name' => 'passengerl',
-    ////    'value' => '',
-    //    'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
-    ////    'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
+    <div class="form-group field-passenger">
+        <label class="control-label" for="carbook-passenger">ผู้ร่วมเดินทาง</label>
+        <?= Select2::widget([
+            'name' => 'passengerl',
+            'value' => '',
+            'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+            'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
+        ]);
+        ?>
+
+        <div class="help-block"></div>
+    </div>
+
+
+    <?//= $form->field($model, 'user_id')->widget(Select2::classname(), [
+    //'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+    //'language' => 'en',
+    //'options' => ['multiple' => true,'placeholder' => 'Select a state ...'],
+    //'pluginOptions' => [
+    //'allowClear' => true
+    //],
     //]);
-    ?>
-    <?= $form->field($model, 'user_id')->widget(Select2::classname(), [
-    'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
-    'language' => 'en',
-    'options' => ['multiple' => true,'placeholder' => 'Select a state ...'],
-    'pluginOptions' => [
-    'allowClear' => true
-    ],
-    ]);
     ?>
 
     <?= $form->field($model, 'startdatetime')->widget(DateTimePicker::className(), [
