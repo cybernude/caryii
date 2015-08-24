@@ -30,16 +30,22 @@ use kartik\select2\Select2;
     ?>
 
 
-    <?= Select2::widget([
-        'name' => 'passengerl',
-        'value' => '',
-        'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
-        'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
+    <?//= Select2::widget([
+     //   'name' => 'passengerl',
+    ////    'value' => '',
+    //    'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+    ////    'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
+    //]);
+    ?>
+    <?= $form->field($model, 'user_id')->widget(Select2::classname(), [
+    'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+    'language' => 'en',
+    'options' => ['multiple' => true,'placeholder' => 'Select a state ...'],
+    'pluginOptions' => [
+    'allowClear' => true
+    ],
     ]);
     ?>
-
-    <?//= $form->field($model, 'startdatetime')->textInput() ?>
-
 
     <?= $form->field($model, 'startdatetime')->widget(DateTimePicker::className(), [
         'options' => ['placeholder' => 'เลือกวันเดินทาง ...'],
