@@ -813,16 +813,16 @@
         },
         {
             "name": "philippfrenzel/yii2fullcalendar",
-            "version": "2.3.2",
+            "version": "2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/philippfrenzel/yii2fullcalendar.git",
-                "reference": "6bee6a8961827244262ea4b51d44b85aa314d0a4"
+                "reference": "04bfbb722d97e67435c8648232e27eece0fef232"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/philippfrenzel/yii2fullcalendar/zipball/6bee6a8961827244262ea4b51d44b85aa314d0a4",
-                "reference": "6bee6a8961827244262ea4b51d44b85aa314d0a4",
+                "url": "https://api.github.com/repos/philippfrenzel/yii2fullcalendar/zipball/04bfbb722d97e67435c8648232e27eece0fef232",
+                "reference": "04bfbb722d97e67435c8648232e27eece0fef232",
                 "shasum": ""
             },
             "require": {
@@ -858,7 +858,7 @@
                 "fullcalendar",
                 "yii2"
             ],
-            "time": "2015-06-16 09:15:47"
+            "time": "2015-08-26 09:19:52"
         },
         {
             "name": "swiftmailer/swiftmailer",

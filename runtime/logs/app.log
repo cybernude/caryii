@@ -3758,3 +3758,1159 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2015-08-27 16:47:31 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii2fullcalendar\models\Event' not found' in /Applications/MAMP/htdocs/caryii/controllers/SiteController.php:58
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 16:47:31 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=site%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54148'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/caryii/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440686851.04
+    'REQUEST_TIME' => 1440686851
+    'argv' => [
+        0 => 'r=site%2Findex'
+    ]
+    'argc' => 1
+]
+2015-08-27 16:48:22 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii2fullcalendar\models\Event' not found' in /Applications/MAMP/htdocs/caryii/controllers/SiteController.php:58
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 16:48:22 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54150'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/caryii/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440686902.26
+    'REQUEST_TIME' => 1440686902
+    'argv' => [
+        0 => 'r=site%2Findex'
+    ]
+    'argc' => 1
+]
+2015-08-27 16:48:29 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii2fullcalendar\models\Event' not found' in /Applications/MAMP/htdocs/caryii/controllers/SiteController.php:58
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 16:48:28 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54151'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/caryii/web/index.php'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440686908.92
+    'REQUEST_TIME' => 1440686908
+    'argv' => []
+    'argc' => 0
+]
+2015-08-27 16:51:07 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'yii2fullcalendar\models\Event' not found' in /Applications/MAMP/htdocs/caryii/controllers/SiteController.php:58
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 16:51:07 [::1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54202'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/caryii/web/index.php'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440687067.83
+    'REQUEST_TIME' => 1440687067
+    'argv' => []
+    'argc' => 0
+]
+2015-08-27 17:04:26 [::1][-][1c660cac21fc587f399859b2eec590df][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:04:26 [::1][-][1c660cac21fc587f399859b2eec590df][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/shop/admin/'
+    '__id' => 0
+    '__expire' => 1440643353
+    'admin_return' => '/shop/admin/default/index'
+    'carousel_return' => '/shop/admin/carousel/a/index'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54518'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440687866.54
+    'REQUEST_TIME' => 1440687866
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:06:24 [::1][-][1c660cac21fc587f399859b2eec590df][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:06:24 [::1][-][1c660cac21fc587f399859b2eec590df][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'PHPSESSID' => '1c660cac21fc587f399859b2eec590df'
+    '_csrf' => 'abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/shop/admin/'
+    '__id' => 0
+    '__expire' => 1440643353
+    'admin_return' => '/shop/admin/default/index'
+    'carousel_return' => '/shop/admin/carousel/a/index'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'PHPSESSID=1c660cac21fc587f399859b2eec590df; _csrf=abcf6b4d3ea082539c06bbb9e82771bd91d9774866c93e44f8c624689b6089c7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22f7Is58keIE6QKx0Z7FF3HGEgvjrTjUFG%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '54542'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440687984.52
+    'REQUEST_TIME' => 1440687984
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:12:54 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:12:54 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49327'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440688374.58
+    'REQUEST_TIME' => 1440688374
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:14:05 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:14:05 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49343'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440688445.36
+    'REQUEST_TIME' => 1440688445
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:25:55 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:25:55 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49515'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440689155.55
+    'REQUEST_TIME' => 1440689155
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:27:34 [::1][-][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'Missing required parameters: id' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#6 {main}
+2015-08-27 17:27:34 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49533'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440689254.58
+    'REQUEST_TIME' => 1440689254
+    'argv' => [
+        0 => 'r=carbook%2Fview'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:30:48 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: user_id' in /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php:69
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(69): yii\base\ErrorHandler->handleError(8, 'Undefined index...', '/Applications/M...', 69, Array)
+#1 [internal function]: app\controllers\CarbookController->actionCreate()
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('create', Array)
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/create', Array)
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2015-08-27 17:30:48 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/create'
+]
+
+$_POST = [
+    '_csrf' => 'WWVSRVd0Z0YVJAh1BhoXFmoIZXRiPi0AMCcdLRlMDiwVXT8QARNTBA=='
+    'CarBook' => [
+        'subject' => 'jhhhh'
+        'description' => 'hhhhhh'
+        'car_type_id' => '1'
+        'startdatetime' => '2015-08-28 23:30:00'
+        'enddatetime' => '2015-08-31 18:30:00'
+    ]
+    'Users' => [
+        'user_id' => [
+            0 => '5'
+            1 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '326'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49560'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440689448.58
+    'REQUEST_TIME' => 1440689448
+    'argv' => [
+        0 => 'r=carbook%2Fcreate'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:32:24 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\CarBookPassenger' not found' in /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php:72
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 17:32:24 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/create'
+]
+
+$_POST = [
+    '_csrf' => 'WWVSRVd0Z0YVJAh1BhoXFmoIZXRiPi0AMCcdLRlMDiwVXT8QARNTBA=='
+    'CarBook' => [
+        'subject' => 'jhhhh'
+        'description' => 'hhhhhh'
+        'car_type_id' => '1'
+        'startdatetime' => '2015-08-28 23:30:00'
+        'enddatetime' => '2015-08-31 18:30:00'
+    ]
+    'Users' => [
+        'user_id' => [
+            0 => '5'
+            1 => '7'
+        ]
+    ]
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '326'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/caryii/web/index.php?r=carbook%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49587'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=carbook%2Fcreate'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fcreate'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440689544.6
+    'REQUEST_TIME' => 1440689544
+    'argv' => [
+        0 => 'r=carbook%2Fcreate'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:47:04 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Relation names are case sensitive. app\models\CarBook has a relation named "carType" instead of "CarType".' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRelationTrait.php:153
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(249): yii\db\ActiveQuery->findFor('CarType', Object(app\models\CarBook))
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('CarType')
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarType', NULL)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(211): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarType.car_typ...')
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(124): yii\widgets\DetailView->normalizeAttributes()
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\Object->__construct(Array)
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#11 /Applications/MAMP/htdocs/caryii/views/carbook/view.php(56): yii\base\Widget::widget(Array)
+#12 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#13 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#14 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\controllers\CarbookController))
+#15 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(app\controllers\CarbookController))
+#16 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(54): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\CarbookController->actionView('25')
+#18 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#21 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#22 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2015-08-27 17:47:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+    'id' => '25'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49827'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview&id=25'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview&id=25'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440690424.2
+    'REQUEST_TIME' => 1440690424
+    'argv' => [
+        0 => 'r=carbook%2Fview&id=25'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:49:47 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\CarBook::CarBookPassenger' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('CarBookPassenge...')
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('CarBookPassenge...')
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarBookPassenge...', NULL)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(211): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarBookPassenge...')
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(124): yii\widgets\DetailView->normalizeAttributes()
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\Object->__construct(Array)
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#11 /Applications/MAMP/htdocs/caryii/views/carbook/view.php(56): yii\base\Widget::widget(Array)
+#12 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#13 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#14 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\controllers\CarbookController))
+#15 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(app\controllers\CarbookController))
+#16 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(54): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\CarbookController->actionView('25')
+#18 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#21 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#22 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2015-08-27 17:49:47 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+    'id' => '25'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49838'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview&id=25'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview&id=25'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440690587.14
+    'REQUEST_TIME' => 1440690587
+    'argv' => [
+        0 => 'r=carbook%2Fview&id=25'
+    ]
+    'argc' => 1
+]
+2015-08-27 17:50:45 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Relation names are case sensitive. app\models\CarBook has a relation named "carBookPassengers" instead of "CarBookPassengers".' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveRelationTrait.php:153
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(249): yii\db\ActiveQuery->findFor('CarBookPassenge...', Object(app\models\CarBook))
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(202): yii\db\BaseActiveRecord->__get('CarBookPassenge...')
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(197): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarBookPassenge...', NULL)
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(211): yii\helpers\BaseArrayHelper::getValue(Object(app\models\CarBook), 'CarBookPassenge...')
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/widgets/DetailView.php(124): yii\widgets\DetailView->normalizeAttributes()
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Object.php(107): yii\widgets\DetailView->init()
+#6 [internal function]: yii\base\Object->__construct(Array)
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(372): ReflectionClass->newInstanceArgs(Array)
+#8 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/di/Container.php(151): yii\di\Container->build('yii\\widgets\\Det...', Array, Array)
+#9 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('yii\\widgets\\Det...', Array, Array)
+#10 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Widget.php(97): yii\BaseYii::createObject(Array)
+#11 /Applications/MAMP/htdocs/caryii/views/carbook/view.php(56): yii\base\Widget::widget(Array)
+#12 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(325): require('/Applications/M...')
+#13 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Applications/M...', Array)
+#14 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Applications/M...', Array, Object(app\controllers\CarbookController))
+#15 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(371): yii\base\View->render('view', Array, Object(app\controllers\CarbookController))
+#16 /Applications/MAMP/htdocs/caryii/controllers/CarbookController.php(54): yii\base\Controller->render('view', Array)
+#17 [internal function]: app\controllers\CarbookController->actionView('25')
+#18 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#19 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#20 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#21 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/view', Array)
+#22 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#23 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#24 {main}
+2015-08-27 17:50:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/view'
+    'id' => '25'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '49841'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook%2Fview&id=25'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook%2Fview&id=25'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440690645.89
+    'REQUEST_TIME' => 1440690645
+    'argv' => [
+        0 => 'r=carbook%2Fview&id=25'
+    ]
+    'argc' => 1
+]
+2015-08-27 18:10:35 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: carbook/viewad' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('viewad', Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/viewad', Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-08-27 18:10:35 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/viewad'
+    'id' => '70'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '50057'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook/viewad&id=70'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook/viewad&id=70'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440691835.44
+    'REQUEST_TIME' => 1440691835
+    'argv' => [
+        0 => 'r=carbook/viewad&id=70'
+    ]
+    'argc' => 1
+]
+2015-08-27 18:10:41 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: carbook/viewad' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('viewad', Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/viewad', Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-08-27 18:10:41 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/viewad'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '50058'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook/viewad'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook/viewad'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440691841.27
+    'REQUEST_TIME' => 1440691841
+    'argv' => [
+        0 => 'r=carbook/viewad'
+    ]
+    'argc' => 1
+]
+2015-08-27 18:10:49 [::1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: carbook/viewad' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php:122
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('viewad', Array)
+#1 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('carbook/viewad', Array)
+#2 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php:96
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2015-08-27 18:10:49 [::1][-][-][info][application] $_GET = [
+    'r' => 'carbook/viewad'
+    'id' => '70'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '50059'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=carbook/viewad&id=70'
+    'REQUEST_URI' => '/caryii/web/index.php?r=carbook/viewad&id=70'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440691849.64
+    'REQUEST_TIME' => 1440691849
+    'argv' => [
+        0 => 'r=carbook/viewad&id=70'
+    ]
+    'argc' => 1
+]
+2015-08-27 18:44:40 [::1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\CarBook::car_type_color' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/BaseActiveRecord.php(247): yii\base\Component->__get('car_type_color')
+#1 /Applications/MAMP/htdocs/caryii/controllers/SiteController.php(63): yii\db\BaseActiveRecord->__get('car_type_color')
+#2 [internal function]: app\controllers\SiteController->actionIndex()
+#3 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#6 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/web/Application.php(84): yii\base\Module->runAction('site/index', Array)
+#7 /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /Applications/MAMP/htdocs/caryii/web/index.php(12): yii\base\Application->run()
+#9 {main}
+2015-08-27 18:44:40 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '50418'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/caryii/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440693880.34
+    'REQUEST_TIME' => 1440693880
+    'argv' => [
+        0 => 'r=site%2Findex'
+    ]
+    'argc' => 1
+]
+2015-08-27 18:48:16 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function getQueryBuilder() on a non-object' in /Applications/MAMP/htdocs/caryii/vendor/yiisoft/yii2/db/ActiveQuery.php:324
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-08-27 18:48:16 [::1][-][-][info][application] $_GET = [
+    'r' => 'site/index'
+]
+
+$_COOKIE = [
+    'SQLiteManager_currentLangue' => '2'
+    '_csrf' => 'c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,th;q=0.6'
+    'HTTP_COOKIE' => 'SQLiteManager_currentLangue=2; _csrf=c1b28110522ec96109feb3e3915fcbabd5720f6366dab7a770636c87d70753b1a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LAZ0QnpP3m715JJFiBOhN8ijL8mUVg4B%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.2.29 (Unix) mod_wsgi/3.5 Python/2.7.10 PHP/5.5.26 mod_ssl/2.2.29 OpenSSL/0.9.8zg DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.22.0'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/caryii/web/index.php'
+    'REMOTE_PORT' => '50429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=site%2Findex'
+    'REQUEST_URI' => '/caryii/web/index.php?r=site%2Findex'
+    'SCRIPT_NAME' => '/caryii/web/index.php'
+    'PHP_SELF' => '/caryii/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1440694096.77
+    'REQUEST_TIME' => 1440694096
+    'argv' => [
+        0 => 'r=site%2Findex'
+    ]
+    'argc' => 1
+]

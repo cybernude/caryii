@@ -5,12 +5,12 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\models\CarBook;
+use app\models\Carbook;
 
 /**
- * CarbookSearch represents the model behind the search form about `app\models\CarBook`.
+ * CarbookSearch represents the model behind the search form about `app\models\Carbook`.
  */
-class CarbookSearch extends CarBook
+class CarbookSearch extends Carbook
 {
     /**
      * @inheritdoc
@@ -18,7 +18,7 @@ class CarbookSearch extends CarBook
     public function rules()
     {
         return [
-            [['car_book_id', 'car_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id', 'shift_id', 'syn_id'], 'integer'],
+            [['car_book_id', 'car_id', 'car_type_id', 'staff', 'approve_id', 'driver_id', 'booking_id', 'go_id', 'shift_id', 'syn_id', 'user_id'], 'integer'],
             [['request_date', 'subject', 'description', 'startdatetime', 'enddatetime', 'approve', 'approve_date', 'realstartdatetime', 'realenddatetime', 'milestart', 'mileend', 'booking', 'cancel'], 'safe'],
         ];
     }
@@ -41,7 +41,7 @@ class CarbookSearch extends CarBook
      */
     public function search($params)
     {
-        $query = CarBook::find();
+        $query = Carbook::find();
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
@@ -59,6 +59,7 @@ class CarbookSearch extends CarBook
             'car_book_id' => $this->car_book_id,
             'request_date' => $this->request_date,
             'car_id' => $this->car_id,
+            'car_type_id' => $this->car_type_id,
             'startdatetime' => $this->startdatetime,
             'enddatetime' => $this->enddatetime,
             'staff' => $this->staff,
@@ -71,6 +72,7 @@ class CarbookSearch extends CarBook
             'go_id' => $this->go_id,
             'shift_id' => $this->shift_id,
             'syn_id' => $this->syn_id,
+            'user_id' => $this->user_id,
         ]);
 
         $query->andFilterWhere(['like', 'subject', $this->subject])

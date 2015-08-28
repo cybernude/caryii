@@ -114,7 +114,7 @@ return array (
   'philippfrenzel/yii2fullcalendar' => 
   array (
     'name' => 'philippfrenzel/yii2fullcalendar',
-    'version' => '2.3.2.0',
+    'version' => '2.3.3.0',
     'alias' => 
     array (
       '@yii2fullcalendar' => $vendorDir . '/philippfrenzel/yii2fullcalendar',

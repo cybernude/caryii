@@ -3,17 +3,16 @@
 namespace app\controllers;
 
 use Yii;
-use app\models\Carbook;
-use app\models\CarbookSearch;
+use app\models\Cartype;
+use app\models\CartypeSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use app\models\CarBookPassenger;
 
 /**
- * CarbookController implements the CRUD actions for Carbook model.
+ * CartypeController implements the CRUD actions for Cartype model.
  */
-class CarbookController extends Controller
+class CartypeController extends Controller
 {
     public function behaviors()
     {
@@ -28,12 +27,12 @@ class CarbookController extends Controller
     }
 
     /**
-     * Lists all Carbook models.
+     * Lists all Cartype models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new CarbookSearch();
+        $searchModel = new CartypeSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -43,7 +42,7 @@ class CarbookController extends Controller
     }
 
     /**
-     * Displays a single Carbook model.
+     * Displays a single Cartype model.
      * @param integer $id
      * @return mixed
      */
@@ -54,41 +53,17 @@ class CarbookController extends Controller
         ]);
     }
 
-
-
-
-    public function actionViewad($id)
-    {
-        return $this->render('viewad', [
-            'model' => $this->findModel($id),
-        ]);
-    }
-
     /**
-     * Creates a new Carbook model.
+     * Creates a new Cartype model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Carbook();
+        $model = new Cartype();
 
-        if ($model->load(Yii::$app->request->post())) {
-
-            $model->request_date = date('Y-m-d H:i:s');
-
-            $model->save();
-
-            $Passengerl =  $_POST['Users']['user_id'] ;
-
-            foreach ($Passengerl as $value){
-                $newPassenger = new CarBookPassenger();
-                $newPassenger->car_book_id = $model->car_book_id ;
-                $newPassenger->passenger_id = $value;
-                $newPassenger->save();
-            }
-
-            return $this->redirect(['view', 'id' => $model->car_book_id]);
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+            return $this->redirect(['view', 'id' => $model->car_type_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -97,7 +72,7 @@ class CarbookController extends Controller
     }
 
     /**
-     * Updates an existing Carbook model.
+     * Updates an existing Cartype model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -107,7 +82,7 @@ class CarbookController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->car_book_id]);
+            return $this->redirect(['view', 'id' => $model->car_type_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -116,7 +91,7 @@ class CarbookController extends Controller
     }
 
     /**
-     * Deletes an existing Carbook model.
+     * Deletes an existing Cartype model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -129,15 +104,15 @@ class CarbookController extends Controller
     }
 
     /**
-     * Finds the Carbook model based on its primary key value.
+     * Finds the Cartype model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Carbook the loaded model
+     * @return Cartype the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Carbook::findOne($id)) !== null) {
+        if (($model = Cartype::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

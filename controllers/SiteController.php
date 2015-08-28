@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\CarBook;
+use app\models\CarType;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -55,10 +56,14 @@ class SiteController extends Controller
         $tasks = [];
         foreach ($carbooks as $carbook)
         {
+
+            $cType = CarType::findOne($carbook->car_type_id) ;
+            $color = $cType->car_type_color ;
             $event = new \yii2fullcalendar\models\Event();
             $event->id = $carbook->car_book_id;
             $event->title = $carbook->subject;
             $event->start = $carbook->startdatetime;
+            $event->color = $color;
             $event->end = $carbook->enddatetime;
             $tasks[] = $event;
         }

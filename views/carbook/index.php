@@ -7,16 +7,16 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\CarbookSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'แบบฟอร์มขอใช้รถยนต์';
+$this->title = 'Carbooks';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="car-book-index">
+<div class="carbook-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a('ขอใช้รถ', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Carbook', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
@@ -26,18 +26,18 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'car_book_id',
-            //'request_date',
+            'request_date',
             //'car_id',
-            'subject',
-            'description:ntext',
-            'startdatetime',
-            'enddatetime',
             'car_type_id',
+            'subject',
+             'description:ntext',
+             'startdatetime',
+            // 'enddatetime',
             // 'staff',
             // 'approve_id',
             // 'approve',
             // 'approve_date',
-            // 'driver_id',
+             'driver_id',
             // 'realstartdatetime',
             // 'realenddatetime',
             // 'milestart',
@@ -48,6 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'cancel',
             // 'shift_id',
             // 'syn_id',
+            // 'user_id',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

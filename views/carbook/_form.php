@@ -7,21 +7,26 @@ use kartik\select2\Select2;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\models\CarBook */
+/* @var $model app\models\Carbook */
 /* @var $form yii\widgets\ActiveForm */
+$uModel = new \app\models\Users();
 ?>
 
-<div class="car-book-form">
+<div class="carbook-form">
 
     <?php $form = ActiveForm::begin(); ?>
 
+
+
     <?//= $form->field($model, 'request_date')->textInput() ?>
+
+    <?//= $form->field($model, 'car_id')->textInput() ?>
+
+    <?//= $form->field($model, 'car_type_id')->textInput() ?>
 
     <?= $form->field($model, 'subject')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'description')->textarea(['rows' => 6]) ?>
-
-    <?//= $form->field($model, 'car_id')->textInput() ?>
 
     <?= $form->field($model, 'car_type_id')->dropDownList(
         \yii\helpers\ArrayHelper::map(\app\models\carType::find()->all(),'car_type_id','car_type_name'),
@@ -29,29 +34,14 @@ use kartik\select2\Select2;
     )
     ?>
 
-
-    <div class="form-group field-passenger">
-        <label class="control-label" for="carbook-passenger">ผู้ร่วมเดินทาง</label>
-        <?= Select2::widget([
-            'name' => 'passengerl',
-            'value' => '',
-            'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
-            'options' => ['multiple' => true, 'placeholder' => 'Select states ...']
-        ]);
-        ?>
-
-        <div class="help-block"></div>
-    </div>
-
-
-    <?//= $form->field($model, 'user_id')->widget(Select2::classname(), [
-    //'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
-    //'language' => 'en',
-    //'options' => ['multiple' => true,'placeholder' => 'Select a state ...'],
-    //'pluginOptions' => [
-    //'allowClear' => true
-    //],
-    //]);
+    <?= $form->field($uModel, 'user_id')->widget(Select2::classname(), [
+        'data' => \yii\helpers\ArrayHelper::map(\app\models\Users::find()->all(),'user_id','name'),
+        'language' => 'en',
+        'options' => ['multiple' => true,'placeholder' => 'เลือกผู้ร่วมเดินทาง ...'],
+        'pluginOptions' => [
+            'allowClear' => true
+        ],
+    ]);
     ?>
 
     <?= $form->field($model, 'startdatetime')->widget(DateTimePicker::className(), [
@@ -75,9 +65,6 @@ use kartik\select2\Select2;
         ]
     ]);
     ?>
-
-
-    <?//= $form->field($model, 'enddatetime')->textInput() ?>
 
     <?//= $form->field($model, 'staff')->textInput() ?>
 
@@ -108,6 +95,8 @@ use kartik\select2\Select2;
     <?//= $form->field($model, 'shift_id')->textInput() ?>
 
     <?//= $form->field($model, 'syn_id')->textInput() ?>
+
+    <?//= $form->field($model, 'user_id')->textInput() ?>
 
     <div class="form-group">
         <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>

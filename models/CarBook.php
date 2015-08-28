@@ -32,7 +32,6 @@ use Yii;
  * @property integer $syn_id
  * @property integer $user_id
  *
- * @property Users $user
  * @property Car $car
  * @property GoType $go
  * @property Drivers $driver
@@ -41,6 +40,7 @@ use Yii;
  * @property Syn $syn
  * @property Users $booking0
  * @property CarType $carType
+ * @property Users $user
  * @property CarBookPassenger[] $carBookPassengers
  */
 class CarBook extends \yii\db\ActiveRecord
@@ -74,39 +74,31 @@ class CarBook extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'car_book_id' => 'Car Book ID',
-            'request_date' => 'Request Date',
-            'car_id' => 'Car IDช',
+            'car_book_id' => 'เลขคำขอ',
+            'request_date' => 'วันที่ขอ',
+            'car_id' => 'รถยนต์',
             'car_type_id' => 'ประเภทรถ',
-            'subject' => 'หัวข้อ',
+            'subject' => 'เรื่อง',
             'description' => 'รายละเอียด',
-            'startdatetime' => 'วันเดินทางไป',
-            'enddatetime' => 'วันเดินทางกลับ',
+            'startdatetime' => 'วันที่ไป',
+            'enddatetime' => 'วันที่กลับ',
             'staff' => 'Staff',
-            'approve_id' => 'Approve ID',
+            'approve_id' => 'อนุมัติโดย',
             'approve' => 'Approve',
             'approve_date' => 'Approve Date',
-            'driver_id' => 'Driver ID',
-            'realstartdatetime' => 'Realstartdatetime',
-            'realenddatetime' => 'Realenddatetime',
-            'milestart' => 'Milestart',
-            'mileend' => 'Mileend',
+            'driver_id' => 'พนักงานขับรถ',
+            'realstartdatetime' => 'เดินทางจริง',
+            'realenddatetime' => 'กลับจริง',
+            'milestart' => 'เลขไมค์เริ่มต้น',
+            'mileend' => 'เลขไมค์สิ้นสุด',
             'booking_id' => 'Booking ID',
             'go_id' => 'Go ID',
             'booking' => 'Booking',
             'cancel' => 'Cancel',
             'shift_id' => 'Shift ID',
             'syn_id' => 'Syn ID',
-            'user_id' => 'ผู้โดยสาร',
+            'user_id' => 'ผู้ร่วมเดินทาง',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUser()
-    {
-        return $this->hasOne(Users::className(), ['user_id' => 'user_id']);
     }
 
     /**
@@ -171,6 +163,14 @@ class CarBook extends \yii\db\ActiveRecord
     public function getCarType()
     {
         return $this->hasOne(CarType::className(), ['car_type_id' => 'car_type_id']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getUser()
+    {
+        return $this->hasOne(Users::className(), ['user_id' => 'user_id']);
     }
 
     /**
